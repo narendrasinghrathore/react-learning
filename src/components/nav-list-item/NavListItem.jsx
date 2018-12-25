@@ -7,7 +7,7 @@ class NavListItem extends Component {
     render() {
         let { item } = this.props;
         return (<li key={item.id}>
-            <a href={item.href} onClick={() => this.getId(item)}>{item.title}</a>
+            <a href={item.href}>{item.title}</a>
         </li>);
     }
 }
