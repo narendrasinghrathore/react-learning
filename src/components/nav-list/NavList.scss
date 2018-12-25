@@ -1,0 +1,86 @@
+$bar-color: white;
+
+.nav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: $bar-color;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .nope {
+    display: none;
+  }
+
+  .menu {
+    background: #136a8a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #267871, #136a8a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
+
+    padding: 10px;
+    border-radius: 3px;
+    margin: 0;
+    position: relative;
+    top: -24px;
+    left: 40px;
+    width: 150px;
+    transition: 0.4s;
+    box-shadow: 1px 1px 15px 3px #000000;
+
+    li {
+      margin-bottom: 10px;
+      list-style: none;
+      border: none;
+      border-left: 2px solid #8f8f8f;
+      padding-left: 5px;
+
+      &:hover {
+        border-left: 2px solid white;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
